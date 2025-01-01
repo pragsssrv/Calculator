@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Scientific Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="calculator-container">
+        <div class="calculator">
+            <div class="calculator-display">
+                <div class="memory-display" id="memory-display">M: 0</div>
+                <div class="history"></div>
+                <input type="text" class="calculator-screen" value="0" disabled />
+            </div>
+            <div class="mode-switch">
+                <label>
+                    <input type="checkbox" id="mode-toggle">
+                    <span>Scientific Mode</span>
+                </label>
+                <label>
+                    <input type="checkbox" id="theme-toggle">
+                    <span>Dark Theme</span>
+                </label>
+                <label>
+                    <input type="checkbox" id="degree-toggle">
+                    <span>Degrees</span>
+                </label>
+            </div>
+            <div class="calculator-keys basic-keys">
+                <button type="button" class="operator" value="+">+</button>
+                <button type="button" class="operator" value="-">-</button>
+                <button type="button" class="operator" value="*">&times;</button>
+                <button type="button" class="operator" value="/">&divide;</button>
+                <button type="button" value="7">7</button>
+                <button type="button" value="8">8</button>
+                <button type="button" value="9">9</button>
+                <button type="button" value="4">4</button>
+                <button type="button" value="5">5</button>
+                <button type="button" value="6">6</button>
+                <button type="button" value="1">1</button>
+                <button type="button" value="2">2</button>
+                <button type="button" value="3">3</button>
+                <button type="button" value="0">0</button>
+                <button type="button" class="decimal" value=".">.</button>
+                <button type="button" class="all-clear" value="all-clear">AC</button>
+                <button type="button" class="clear-entry" value="clear-entry">CE</button>
+                <button type="button" class="equal-sign" value="=">=</button>
+                <button type="button" value="(">(</button>
+                <button type="button" value=")">)</button>
+            </div>
+            <div class="calculator-keys scientific-keys" style="display: none;">
+                <button type="button" class="memory" value="mc">MC</button>
+                <button type="button" class="memory" value="mr">MR</button>
+                <button type="button" class="memory" value="m+">M+</button>
+                <button type="button" class="memory" value="m-">M-</button>
+                <button type="button" class="scientific" value="square">x²</button>
+                <button type="button" class="scientific" value="sqrt">√x</button>
+                <button type="button" class="scientific" value="sin">sin</button>
+                <button type="button" class="scientific" value="cos">cos</button>
+                <button type="button" class="scientific" value="tan">tan</button>
+                <button type="button" class="scientific" value="exp">exp</button>
+                <button type="button" class="scientific" value="log">log</button>
+            </div>
+        </div>
+        <div class="history-container">
+            <h3>Calculation History</h3>
+            <button id="clear-history">Clear History</button>
+            <ul id="history-list"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
