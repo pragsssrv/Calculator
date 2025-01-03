@@ -10,13 +10,13 @@ This is an advanced multi-themed calculator project built using **HTML**, **CSS*
 
 #### Responsive Views:
 - **Mobile - Default Theme**  
-![mobile - default theme](https://user-images.githubusercontent.com/63062052/119277928-f65c0f80-bbe7-11eb-80c9-144d561ff46a.png)
+![mobile - default theme](https://github.com/pragsssrv/Calculator/blob/eab37bee5ac636d86d14c2885c072815d571f8e5/design/Screenshot%202025-01-03%20135951.png?raw=true)
 
 - **Tablet - Light Theme**  
-![tablet - light theme](https://user-images.githubusercontent.com/63062052/119277970-286d7180-bbe8-11eb-8aca-58af3a9ada97.png)
+![tablet - light theme](https://github.com/pragsssrv/Calculator/blob/eab37bee5ac636d86d14c2885c072815d571f8e5/design/Screenshot%202025-01-03%20135940.png?raw=true)
 
 - **Desktop - Vivid Theme**  
-![desktop - vivid theme](https://user-images.githubusercontent.com/63062052/119277990-43d87c80-bbe8-11eb-87be-848899a2f088.png)
+![desktop - vivid theme](https://github.com/pragsssrv/Calculator/blob/eab37bee5ac636d86d14c2885c072815d571f8e5/design/Screenshot%202025-01-03%20140002.png?raw=true)
 
 ---
 
