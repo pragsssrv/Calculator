@@ -1,147 +1,94 @@
-# Advanced Multi-Themed Calculator
+# Multi-Themed-Calc 🧮
 
-## Overview
+![sample](https://github.com/pragsssrv/Calculator/blob/eab37bee5ac636d86d14c2885c072815d571f8e5/sample.gif?raw=true)
 
-This is an advanced multi-themed calculator project built using **HTML**, **CSS**, and **JavaScript**. It combines the functionality of an advanced calculator with the flexibility of theme customization, responsive design, and advanced mathematical features. Designed to offer a seamless user experience, it provides robust support for both **basic arithmetic** and **scientific operations** along with various personalization options.
+A modern, responsive calculator application featuring three distinct themes: Modern, Retro, and Cyber. Built with vanilla JavaScript, HTML, and CSS.
 
----
+## Features ✨
 
-### Screenshot
+- **Three Unique Themes**
+  - 🎨 Modern: Clean, minimal design with smooth animations
+  ![modern theme](https://github.com/pragsssrv/Calculator/blob/eab37bee5ac636d86d14c2885c072815d571f8e5/modern.png?raw=true)
+  - 🕹️ Retro: Classic calculator feel with pixel-perfect aesthetics
+  ![retro theme](https://github.com/pragsssrv/Calculator/blob/eab37bee5ac636d86d14c2885c072815d571f8e5/retro.png?raw=true)
+  - 🌟 Cyber: Futuristic dark mode with neon accents
+  ![cyber theme](https://github.com/pragsssrv/Calculator/blob/eab37bee5ac636d86d14c2885c072815d571f8e5/cyber.png?raw=true)
+- **Advanced Functionality**
+  - Operation history display
+  - Percentage calculations
+  - Sign toggle (±)
+  - Keyboard support
+  - Error handling
+  - Decimal point operations
 
-#### Responsive Views:
-- **Mobile - Default Theme**  
-![mobile - default theme](https://github.com/pragsssrv/Calculator/blob/eab37bee5ac636d86d14c2885c072815d571f8e5/design/Screenshot%202025-01-03%20135951.png?raw=true)
+- **Responsive Design**
+  - Works seamlessly on desktop and mobile devices
+  - Adaptive layout for different screen sizes
 
-- **Tablet - Light Theme**  
-![tablet - light theme](https://github.com/pragsssrv/Calculator/blob/eab37bee5ac636d86d14c2885c072815d571f8e5/design/Screenshot%202025-01-03%20135940.png?raw=true)
+- **Persistent Settings**
+  - Saves theme preference using localStorage
+  - Remembers your last used theme
 
-- **Desktop - Vivid Theme**  
-![desktop - vivid theme](https://github.com/pragsssrv/Calculator/blob/eab37bee5ac636d86d14c2885c072815d571f8e5/design/Screenshot%202025-01-03%20140002.png?raw=true)
+## Tech Stack 💻
 
----
+- HTML5
+- CSS3 (with CSS Variables for theming)
+- Vanilla JavaScript (ES6+)
+- Google Fonts
 
-## Features
+## Installation & Setup 🚀
 
-### **Core Features**
-1. **Basic Arithmetic Operations**: Addition, Subtraction, Multiplication, Division, and Modulo.
-2. **Scientific Functions**:  
-   - Square root, Power, Trigonometric functions (`sin`, `cos`, `tan`), Logarithms, Exponentials, Factorial, and more.
-3. **Memory Functions**:  
-   - Memory Clear (`MC`), Memory Recall (`MR`), Memory Add (`M+`), and Memory Subtract (`M-`).
-4. **Rounding**: Round the current value to the nearest whole number.
-5. **Keyboard Input Support**: Input numbers, operators, and commands via keyboard, including pressing `Enter` for evaluation.
-
----
-
-### **Advanced Features**
-1. **Multi-Themed Calculator**:  
-   - Includes multiple themes (`Default`, `Light`, `Vivid`) with easy toggling via a **radio button switch**.
-2. **History Toggle**:  
-   - Show or hide the calculation history.
-3. **Dark Mode**:  
-   - Easily switch between **light** and **dark themes**.
-4. **Vibration Feedback**:  
-   - Haptic feedback for supported devices.
-5. **Customizable Layout**:  
-   - Fully responsive design centered on the webpage.
-6. **Scientific Function Toggle**:  
-   - Option to show or hide advanced scientific functions.
-
----
-
-### **Customization**
-- The calculator's appearance is fully customizable with themes and layout adjustments.
-- Users can personalize their experience by selecting a theme and toggling visibility of specific features (e.g., scientific functions, history).
-
----
-
-## Installation
-
-### Clone the Repository:
+1. Clone the repository:
 ```bash
-git clone https://github.com/pragunsrv/calculator.git
+git clone https://github.com/pragsssrv/Multi-Themed-Calc.git
 ```
 
-### Navigate to the Project Directory:
+2. Navigate to the project directory:
 ```bash
-cd calculator
+cd Multi-Themed-Calc
 ```
 
-### Open the Calculator:
-Open the `index.html` file in your web browser. You can also use a live server for a better development experience.
+3. Open `index.html` in your preferred browser.
 
----
+## Usage 🔧
 
-## Usage
+### Basic Operations
+- Use the number pad for input
+- Click operators (+, -, ×, ÷) for calculations
+- Press 'AC' to clear all
+- Use '±' to toggle number sign
+- Press '%' for percentage calculations
 
-### Basic Functionality:
-- Enter numbers and operations via buttons or keyboard.
-- Use `=` or press `Enter` to evaluate the expression.
+### Keyboard Shortcuts
+- Numbers: `0-9`
+- Operators: `+`, `-`, `*`, `/`
+- Equal: `Enter` or `=`
+- Clear: `Escape`
+- Delete: `Backspace`
 
-### Advanced Options:
-1. **Theme Toggle**:  
-   Use the radio button to switch between `Default`, `Light`, and `Vivid` themes.
-2. **Scientific Functions**:  
-   Click the `SCF` button to display or hide advanced scientific operations.
-3. **Memory Options**:  
-   - Store results with `M+`, recall with `MR`, and clear memory with `MC`.
-4. **History Toggle**:  
-   View previous calculations or hide the history panel.
+### Theme Switching
+- Click the theme buttons at the top to switch between themes
+- Theme preference is automatically saved
 
----
+## Contributing 🤝
 
-## Technologies Used
-- **HTML**: Semantic structure of the calculator.
-- **CSS**:  
-   - Grid and Flexbox for responsive layouts.  
-   - CSS custom properties for themes.  
-- **JavaScript**: Functional programming for calculator operations, theme toggling, and interactivity.
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
----
+## License 📝
 
-## Project Structure
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-### Files:
-- **`index.html`**: Core structure of the calculator.
-- **`styles.css`**: Styling for themes, layouts, and animations.
-- **`script.js`**: Calculator functionality and event handling logic.
-
-### Directory:
-```
-/calculator
-│
-├── index.html
-├── styles.css
-└── script.js
-```
-
----
-
-## Future Improvements
-1. Add more advanced mathematical operations.
-2. Integrate animations and transitions for better UX.
-3. Save calculation history using **local storage**.
-4. Introduce support for additional themes.
-
----
-
-## My Process
-
-### What I Learned:
-- Enhanced understanding of **CSS Grid** and **Flexbox**.
-- First-hand experience with **JavaScript functional programming**.
-- Working with **theme switches** and **local storage** integration.
-
----
-
-### Useful Resources:
-1. [How to build a Calculator App with JavaScript](https://freshman.tech/calculator/)
-2. [Radio Button Toggle Switch by Mike Hemberger](https://codepen.io/JiveDig/pen/jbdJXR)
-3. [Kevin Powell](https://www.kevinpowell.co/)
-4. [A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
-
----
-
-## Author
+## Connect with Me 🌐
 
 - GitHub: [@pragsssrv](https://github.com/pragsssrv)
+- Email: [prag2403@gmail.com](mailto:prag2403@gmail.com)
+
+## Acknowledgments y
+
+- Fonts provided by Google Fonts
+- Inspiration from classic calculator designs
+- Special thanks to the open-source community

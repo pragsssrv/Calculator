@@ -1,72 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" data-theme="modern">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="./css/style.css">
-  <title>MultiThemed | Calculator app</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Theme Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@400;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
 </head>
-
 <body>
-  <div class="container">
-    <div class="header">
-      <h1 class="title">calc</h1>
-      <p class="theme">THEME</p>
-      <!-- 'labels' toggle switch for theme -->
-      <div class="theme-numbers">
-        <span>1</span>
-        <span>2</span>
-        <span>3</span>
-      </div>
-      <!-- toggle switch for theme -->
-      <div class="switch-toggle switch-3 switch-candy">
-
-        <input id="theme1" name="state-d" type="radio" />
-        <label for="theme1" class="toggle"></label>
-
-        <input id="theme2" name="state-d" type="radio" />
-        <label for="theme2" class="toggle"></label>
-
-        <input id="theme3" name="state-d" type="radio" />
-        <label for="theme3" class="toggle"></label>
-
-      </div>
-    </div>  <!-- end header container -->
-    
-    <div class="container-display">
-      <p class="display" id="display">0</p>
+    <div class="theme-toggle">
+        <button id="retro-theme">Retro</button>
+        <button id="modern-theme">Modern</button>
+        <button id="cyber-theme">Cyber</button>
     </div>
-    <div class="keyboard">
-      <button class="btn">7</button>
-      <button class="btn">8</button>
-      <button class="btn">9</button>
-      <button class="btn btn-function-key" aria-label="delete">DEL</button>
-      <button class="btn">4</button>
-      <button class="btn">5</button>
-      <button class="btn">6</button>
-      <button class="btn" aria-label="addition">+</button>
-      <button class="btn">1</button>
-      <button class="btn">2</button>
-      <button class="btn">3</button>
-      <button class="btn" aria-label="subtract">-</button>
-      <button class="btn" aria-label="decimal">.</button>
-      <button class="btn">0</button>
-      <button class="btn" aria-label="divide">/</button>
-      <button class="btn" aria-label="multiply">x</button>
-      <button class="btn btn-function-key btn-reset-key" >RESET</button>
-      <button class="btn btn-equal-key" aria-label="equals">=</button>
-    </div> <!-- end keyboard -->
-  </div> <!-- end container -->
-
-  <div class="attribution">
-    <div>Coded by <a href="mailto:prag2403@gmail.com">Pragun Srivastava</a>.</div>
-  </div>
-  <!-- Script -->
-  <script src="./src/calculator.js"></script>
+    
+    <div class="calculator">
+        <div class="display">
+            <div class="history" id="history"></div>
+            <div class="result" id="result">0</div>
+        </div>
+        
+        <div class="keypad">
+            <button class="key function">AC</button>
+            <button class="key function">±</button>
+            <button class="key function">%</button>
+            <button class="key operator">÷</button>
+            
+            <button class="key">7</button>
+            <button class="key">8</button>
+            <button class="key">9</button>
+            <button class="key operator">×</button>
+            
+            <button class="key">4</button>
+            <button class="key">5</button>
+            <button class="key">6</button>
+            <button class="key operator">-</button>
+            
+            <button class="key">1</button>
+            <button class="key">2</button>
+            <button class="key">3</button>
+            <button class="key operator">+</button>
+            
+            <button class="key zero">0</button>
+            <button class="key">.</button>
+            <button class="key operator">=</button>
+        </div>
+    </div>
+    
+    <script src="calculator.js"></script>
 </body>
-
 </html>

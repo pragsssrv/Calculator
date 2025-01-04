@@ -1,0 +1,199 @@
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('background.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Theme Toggle Styles */
+.theme-toggle {
+    margin-bottom: 2rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.theme-toggle button {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+/* Modern Theme */
+html[data-theme="modern"] {
+    --calc-bg: rgb(29, 28, 28);
+    --display-bg: #f0f0f0;
+    --key-bg: #ffffff;
+    --key-border: #e0e0e0;
+    --operator-bg: #ff5900;
+    --operator-color: #ffffff;
+    --text-color: #333333;
+    --shadow: rgba(0, 0, 0, 0.1);
+    --font-family: 'Roboto', sans-serif;
+}
+
+/* Retro Theme */
+html[data-theme="retro"] {
+    --calc-bg: #504d4a;
+    --display-bg: #9EAD86;
+    --key-bg: #d0d0d0;
+    --key-border: #a0a0a0;
+    --operator-bg: #F4A460;
+    --operator-color: #000000;
+    --text-color: #222222;
+    --shadow: rgba(0, 0, 0, 0.2);
+    --font-family: 'Press Start 2P', cursive;
+}
+
+/* Cyber Theme */
+html[data-theme="cyber"] {
+    --calc-bg: rgba(23, 24, 35, 0.95);
+    --display-bg: #2a2d43;
+    --key-bg: #31344c;
+    --key-border: #454b6b;
+    --operator-bg: #00ff9f;
+    --operator-color: #000000;
+    --text-color: #00ff9f;
+    --shadow: rgba(0, 255, 159, 0.2);
+    --font-family: 'Share Tech Mono', monospace;
+}
+
+/* Calculator Container */
+.calculator {
+    background: var(--calc-bg);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 10px 30px var(--shadow);
+    width: 100%;
+    max-width: 400px;
+    font-family: var(--font-family);
+    animation: floating 3s ease-in-out infinite;
+}
+
+/* Display */
+.display {
+    background: var(--display-bg);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1.5rem;
+    text-align: right;
+}
+
+.history {
+    min-height: 1.2rem;
+    color: var(--text-color);
+    opacity: 0.7;
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.result {
+    color: var(--text-color);
+    font-size: 2.5rem;
+    word-wrap: break-word;
+}
+
+/* Keypad */
+.keypad {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.key {
+    background: var(--key-bg);
+    border: 1px solid var(--key-border);
+    padding: 1.2rem;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    color: var(--text-color);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.key:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px var(--shadow);
+}
+
+.key:active {
+    transform: translateY(1px);
+}
+
+.key.operator {
+    background: var(--operator-bg);
+    color: var(--operator-color);
+}
+
+.key.zero {
+    grid-column: span 2;
+}
+.floating-effect {
+    animation: floating 3s ease-in-out infinite;
+}
+
+@keyframes floating {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+/* Theme-specific Animations */
+html[data-theme="retro"] .key {
+    transform: none;
+    box-shadow: 3px 3px 0 var(--key-border);
+}
+
+html[data-theme="retro"] .key:active {
+    transform: translate(3px, 3px);
+    box-shadow: none;
+}
+
+html[data-theme="cyber"] .key {
+    border: 1px solid var(--operator-bg);
+    text-shadow: 0 0 5px var(--operator-bg);
+}
+
+html[data-theme="cyber"] .calculator {
+    border: 1px solid var(--operator-bg);
+    box-shadow: 0 0 20px var(--operator-bg);
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .calculator {
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    .key {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+
+    .result {
+        font-size: 2rem;
+    }
+}
+
+/* Remove theme-specific animations that override the floating effect */
+html[data-theme="retro"] .calculator {
+    /* Removed animation property to prevent conflict */
+}
+
+html[data-theme="cyber"] .calculator {
+    /* Removed animation property to prevent conflict */
+}
