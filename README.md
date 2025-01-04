@@ -1,18 +1,25 @@
 # Multi-Themed-Calc 🧮
 
-![sample](https://github.com/pragsssrv/Calculator/blob/eab37bee5ac636d86d14c2885c072815d571f8e5/sample.gif?raw=true)
+![sample](https://github.com/pragsssrv/MultiThemed-Calculator/blob/db0ac4c9643f00c5704fd215a54b1db1dd1543ab/images/sample.gif?raw=true)
 
 A modern, responsive calculator application featuring three distinct themes: Modern, Retro, and Cyber. Built with vanilla JavaScript, HTML, and CSS.
 
 ## Features ✨
 
-- **Three Unique Themes**
+- **Three Unique Themes:**
+    
+  ![modern theme](https://github.com/pragsssrv/MultiThemed-Calculator/blob/db0ac4c9643f00c5704fd215a54b1db1dd1543ab/images/modern.png?raw=true)
+
   - 🎨 Modern: Clean, minimal design with smooth animations
-  ![modern theme](https://github.com/pragsssrv/Calculator/blob/eab37bee5ac636d86d14c2885c072815d571f8e5/modern.png?raw=true)
+
+  ![retro theme](https://github.com/pragsssrv/MultiThemed-Calculator/blob/db0ac4c9643f00c5704fd215a54b1db1dd1543ab/images/retro.png?raw=true)
+
   - 🕹️ Retro: Classic calculator feel with pixel-perfect aesthetics
-  ![retro theme](https://github.com/pragsssrv/Calculator/blob/eab37bee5ac636d86d14c2885c072815d571f8e5/retro.png?raw=true)
+
+  ![cyber theme](https://github.com/pragsssrv/MultiThemed-Calculator/blob/db0ac4c9643f00c5704fd215a54b1db1dd1543ab/images/cyber.png?raw=true)
+
   - 🌟 Cyber: Futuristic dark mode with neon accents
-  ![cyber theme](https://github.com/pragsssrv/Calculator/blob/eab37bee5ac636d86d14c2885c072815d571f8e5/cyber.png?raw=true)
+
 - **Advanced Functionality**
   - Operation history display
   - Percentage calculations
